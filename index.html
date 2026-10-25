@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI API 价格与选站指南｜DeepSeek / GLM / Kimi 官方价对照</title>
+<meta name="description" content="DeepSeek、GLM、Kimi 三大模型的官方 API 单价与倍率折算，附选站五项标准、报错排查、客户端配置和成本计算器。数据抓自各家官方定价页并标注日期。">
+<meta name="keywords" content="AI API 价格,DeepSeek API 价格,GLM 价格,Kimi 价格,API 中转站,大模型 API 比价">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://huangjinpeng216.github.io/">
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--line:#334155;--tx:#e2e8f0;--mut:#94a3b8;--acc:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.8 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:56px 20px 80px}
+h1{font-size:28px;line-height:1.4;margin:0 0 10px}
+p{color:#cbd5e1}
+.sub{color:var(--mut);font-size:15px;margin:0 0 30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+th{background:#172033}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.note{font-size:14px;color:var(--mut);border-top:1px solid var(--line);margin-top:36px;padding-top:14px}
+ul{padding-left:20px}
+li{color:#cbd5e1}
+@media (max-width:640px){
+  .wrap{padding:28px 14px 64px}
+  h1{font-size:22px}
+  table{display:block;width:100%;overflow-x:auto;white-space:nowrap}
+  th,td{padding:9px 10px;font-size:13.5px}
+}
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>AI API 价格与选站指南</h1>
+<p class="sub">三大模型官方单价 · 倍率折算 · 选站标准 · 抓取日期 2026-10-26</p>
+
+<div class="card">
+<p><strong>这里放的是能核对的数据，不是推荐榜单。</strong>所有价格抓自各家官方定价页，标注日期和来源，你可以自己去验。</p>
+</div>
+
+<h2>三大模型官方输入价（每百万 token）</h2>
+<table>
+<tr><th>模型</th><th style="text-align:right">官方输入</th><th style="text-align:right">官方输出</th><th style="text-align:right">0.1x 折算</th></tr>
+<tr><td>DeepSeek V4.1-Flash-1017</td><td class="num">$0.15</td><td class="num">$0.60</td><td class="num">$0.015</td></tr>
+<tr><td>GLM-5.3</td><td class="num">8 元</td><td class="num">28 元</td><td class="num">0.8 元</td></tr>
+<tr><td>Kimi K3</td><td class="num">¥20.00</td><td class="num">¥100.00</td><td class="num">¥2.00</td></tr>
+</table>
+<p class="sub">DeepSeek 另有高峰/低谷价（低谷为高峰一半），完整数据见下方价格表。</p>
+
+<h2>完整内容</h2>
+<ul>
+<li><a href="/ai-api-relay-pricing-cn/api-price-table.html">官方价格表（三家 8 个模型，含缓存命中价）</a></li>
+<li><a href="/ai-api-relay-pricing-cn/prices.json">价格数据 JSON（供程序读取）</a></li>
+<li><a href="/ai-api-relay-pricing-cn/cost-calculator.html">成本计算器（按你的用量算月费）</a></li>
+<li><a href="/ai-api-relay-pricing-cn/model-selector.html">模型选择器（4 个问题推荐模型）</a></li>
+<li><a href="/ai-api-relay-pricing-cn/">比价与选站指南（首页）</a></li>
+<li><a href="/ai-api-relay-pricing-cn/api-relay-pitfalls.html">中转站避雷指南</a></li>
+<li><a href="/ai-api-relay-pricing-cn/api-error-codes.html">API 报错大全</a></li>
+<li><a href="/ai-api-relay-pricing-cn/client-setup.html">客户端配置</a></li>
+</ul>
+
+<h2>一个诚实的提醒</h2>
+<p>DeepSeek Flash 档本身就很便宜——一个月跑 5000 万 token，官方价也才一百块出头。用这个档位的话，中转站省下的绝对金额很小，不值得为它承担第三方服务的稳定性风险。</p>
+<p>0.1x 的省钱效果真正明显的地方是高单价模型（如 Kimi K3 输出 ¥100/百万 token）。<strong>先算你的量，再决定要不要比价。</strong></p>
+
+<div class="note">
+<p>页面由 <a href="https://l7shop.xyz" rel="nofollow">l7shop.xyz</a> 维护。价格抓自官方文档，可能随时调整，请以官方为准。</p>
+</div>
+
+</div></body></html>
